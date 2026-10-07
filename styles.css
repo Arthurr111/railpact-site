@@ -96,6 +96,12 @@ p { text-wrap: pretty; }
 .depot-life dl > div + div, .multiplayer-details dl > div + div { margin-top: 20px; }
 .depot-life dt, .multiplayer-details dt { font-size: 14px; font-weight: 650; margin-bottom: 5px; }
 .depot-life dd, .multiplayer-details dd { margin: 0; font-size: 14px; color: var(--muted); }
+.operations-features { border-block: 1px solid var(--line); background: #e9eeea; }
+.operations-features__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 48px; margin: 0; }
+.operations-features__list > div { padding-top: 18px; border-top: 1px solid var(--line); min-width: 0; }
+.operations-features__list dt { font-size: 18px; font-weight: 650; margin-bottom: 10px; }
+.operations-features__list dd { margin: 0; font-size: 14px; color: var(--muted); }
+.development-note { margin: 35px 0 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
 .depots-section { background: var(--forest); color: var(--paper); }
 .depots-section .section-index { color: var(--gold); }
 .depots-section .section-aside { color: #c6d4c9; }
@@ -277,6 +283,7 @@ html.viewer-open { overflow: hidden; }
   .viewer-controls { align-self: center; }
 }
 @media (max-width: 520px) {
+  .operations-features__list { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   :root { --gutter: 20px; }
   h2 { font-size: 36px; }
   .main-nav { font-size: 11px; gap: 9px; }
