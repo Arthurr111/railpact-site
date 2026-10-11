@@ -102,6 +102,20 @@ p { text-wrap: pretty; }
 .operations-features__list dt { font-size: 18px; font-weight: 650; margin-bottom: 10px; }
 .operations-features__list dd { margin: 0; font-size: 14px; color: var(--muted); }
 .development-note { margin: 35px 0 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.navigation-note { margin-top: 16px; font-size: 14px; color: var(--muted); }
+.navigation-note a { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
+.navigation-note .icon { width: 15px; height: 15px; vertical-align: middle; }
+.partner-section { background: var(--white); }
+.partner-depot { max-width: 1080px; margin-inline: auto; }
+.partner-section figcaption { margin-top: 14px; color: var(--muted); font-size: 13px; }
+.partner-section figcaption strong { color: var(--ink); }
+.partner-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 40px; margin: 48px 0; }
+.partner-features > div { min-width: 0; padding-top: 18px; border-top: 1px solid var(--line); }
+.partner-features dt { font-size: 18px; font-weight: 650; line-height: 1.3; margin-bottom: 10px; }
+.partner-features dd { margin: 0; color: var(--muted); font-size: 14px; }
+.partner-captures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; align-items: start; }
+.partner-captures figure { min-width: 0; }
+.partner-publication { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .depots-section { background: var(--forest); color: var(--paper); }
 .depots-section .section-index { color: var(--gold); }
 .depots-section .section-aside { color: #c6d4c9; }
@@ -231,6 +245,7 @@ html.viewer-open { overflow: hidden; }
   .multiplayer-games { gap: 30px; }
 }
 @media (max-width: 800px) {
+  .partner-features { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-block: 35px; }
   :root { --gutter: 24px; }
   .site-header { height: auto; display: grid; grid-template-columns: 1fr auto; column-gap: 16px; row-gap: 0; padding-top: 14px; }
   .brand img { width: 30px; height: 30px; }
@@ -283,6 +298,7 @@ html.viewer-open { overflow: hidden; }
   .viewer-controls { align-self: center; }
 }
 @media (max-width: 520px) {
+  .partner-features, .partner-captures { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .operations-features__list { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   :root { --gutter: 20px; }
   h2 { font-size: 36px; }
