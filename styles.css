@@ -375,6 +375,26 @@ html.viewer-open { overflow: hidden; }
   :root { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+.feature-captures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 28px; margin-block: 36px; }
+.feature-captures img { display: block; width: 100%; height: auto; }
+.feature-captures figcaption { font-size: 13px; line-height: 1.6; margin-top: 14px; }
+.feature-captures figcaption strong { display: block; }
+.release-history { border-top: 1px solid var(--line); }
+.release-history__entries { max-width: 960px; margin-inline: auto; }
+.release-history details { border-bottom: 1px solid var(--line); }
+.release-history summary { display: flex; align-items: baseline; gap: 18px; padding: 22px 0; cursor: pointer; font-size: 18px; font-weight: 600; list-style: none; }
+.release-history summary::-webkit-details-marker { display: none; }
+.release-history summary::after { content: "+"; margin-left: auto; flex-shrink: 0; }
+.release-history details[open] summary::after { content: "−"; }
+.release-number { color: var(--forest); font-size: 14px; font-variant-numeric: tabular-nums; flex: 0 0 52px; }
+.release-history ul { margin: 0; padding: 0 0 24px 90px; font-size: 15px; line-height: 1.75; }
+.release-history li + li { margin-top: 9px; }
+@media (max-width: 520px) {
+  .feature-captures { grid-template-columns: minmax(0, 1fr); }
+  .release-history summary { font-size: 16px; gap: 12px; }
+  .release-number { flex-basis: 44px; font-size: 12px; }
+  .release-history ul { padding-left: 20px; font-size: 14px; }
+}
 @media print {
   :root { color: #000; background: white; }
   .site-header, .gallery-dialog, .image-expand, .hero-shade, .skip-link { display: none; }
