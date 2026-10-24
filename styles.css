@@ -99,6 +99,13 @@ p { text-wrap: pretty; }
 .release-preview { background: var(--white); border-top: 1px solid var(--line); }
 .release-preview__notice { padding: 16px 0 16px 20px; border-left: 3px solid var(--gold); color: var(--muted); font-size: 13px; }
 .release-preview__notice strong { color: var(--ink); }
+.major-projects dd p + p { margin-top: 12px; }
+.major-projects .project-meta { margin-bottom: 12px; color: var(--forest); font-size: 13px; }
+.project-meta strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.project-budget-note { margin-top: 28px; color: var(--muted); font-size: 12px; }
+.release-archive { padding-block: 22px; }
+.release-archive > .wrap > details > summary { cursor: pointer; padding-block: 12px; color: var(--forest); font-size: 18px; font-weight: 650; }
+.release-archive .section-heading { margin-top: 36px; }
 .annex-story { display: grid; grid-template-columns: 1.15fr 1fr; gap: 60px; margin-block: 40px; }
 .annex-story > div, .release-preview__features > div { min-width: 0; }
 .annex-story h3 { font-size: 23px; margin-bottom: 18px; }
