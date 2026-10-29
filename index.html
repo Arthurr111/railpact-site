@@ -41,7 +41,7 @@
       <a href="#depots">Les dépôts</a>
       <a href="#campagne">La campagne</a>
       <a href="#images">En images</a>
-      <a href="#version073" aria-label="Nouveautés de la 0.7.3">0.7.3</a>
+      <a href="#version074" aria-label="Nouveautés de la 0.7.4">0.7.4</a>
     </nav>
     <a class="tester-link" href="https://alpha.railpact.fr">Accès testeurs <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
   </header>
@@ -90,8 +90,8 @@
 
     <section class="section release-preview" id="experience073" aria-labelledby="experience-title" data-published-version="0.7.3">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow section-index">0.7.3 / Votre prochain mouvement</p><h2 id="experience-title">Des départs préparés.<br>Une compagnie qui avance.</h2></div></div>
-        <p class="release-preview__notice"><strong>Les nouveautés de la 0.7.3.</strong> Retrouvez la version distribuée et ses téléchargements dans l’espace testeur après connexion.</p>
+        <div class="section-heading"><div><p class="eyebrow section-index">Depuis la 0.7.3 / Votre prochain mouvement</p><h2 id="experience-title">Des départs préparés.<br>Une compagnie qui avance.</h2></div></div>
+        <p class="release-preview__notice"><strong>Depuis la 0.7.3.</strong> Retrouvez la version distribuée et ses téléchargements dans l’espace testeur après connexion.</p>
         <dl class="release-preview__features">
           <div><dt>Vérifier avant de confirmer</dt><dd><p>Parcours au dépôt, équipe mobilisée, blocages et accès à libérer : le contrôle vous aide à préparer une circulation, une intervention ou une manœuvre. Pour les trains, consultez le retour estimé, les échéances et la marge selon les pénalités, avant financement et aléas. Voir le trajet et son obstacle ne dépense rien.</p></dd></div>
           <div><dt>Trois priorités pour reprendre</dt><dd><p>À décider, À anticiper, À développer : le point compagnie relie un courrier, un incident, une relève ou le prochain objectif à une action concrète. Retrouvez-le dans Exploitation et depuis la barre du jeu.</p></dd></div>
@@ -312,9 +312,29 @@
     </section>
 
     <section class="section wrap release-history" id="nouveautes" aria-labelledby="updates-title">
-      <div class="section-heading"><div><p class="eyebrow">Le journal de l’Alpha</p><h2 id="updates-title">Ce qui a changé,<br>version après version.</h2></div><p class="section-aside">Les ajouts des 0.5.x à la 0.7.3. Découvrez <a href="#version073">votre prochain mouvement en 0.7.3</a>. Retrouvez <a href="#version072">la préparation des circulations en 0.7.2</a>, <a href="#prochainement">les cinq grands projets de la 0.7.1</a> ou <a href="#gare070">la gare de la 0.7.0</a>.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">Le journal de l’Alpha</p><h2 id="updates-title">Ce qui a changé,<br>version après version.</h2></div><p class="section-aside">Les ajouts des 0.5.x à la 0.7.4. Découvrez <a href="#version074">la courtoisie et le suivi des livraisons en 0.7.4</a>. Retrouvez <a href="#version073">votre prochain mouvement en 0.7.3</a>, <a href="#version072">la préparation des circulations en 0.7.2</a>, <a href="#prochainement">les cinq grands projets de la 0.7.1</a> ou <a href="#gare070">la gare de la 0.7.0</a>.</p></div>
       <div class="release-history__entries">
-        <details id="version073" open data-published-version="0.7.3">
+        <!-- Source à publier après activation du canal 0.7.4. -->
+        <details id="version074" open data-published-version="0.7.4">
+          <summary><span class="release-number">0.7.4</span><span>Un geste de courtoisie, des livraisons qui restent comptées</span></summary>
+          <p class="release-preview__notice"><strong>Les changements de la 0.7.4.</strong> La version distribuée et ses installateurs sont indiqués dans l’espace testeur après connexion.</p>
+          <h3>Nouveautés</h3>
+          <ul>
+            <li>Cadeaux de courtoisie attribués par un administrateur, avec un message personnalisé. Une fenêtre les présente à votre retour dans le Menu de partie ; leur lecture reste mémorisée dans la sauvegarde et l’export.</li>
+            <li>Un onglet dédié dans l’administration réunit l’aperçu et l’historique des cadeaux de courtoisie.</li>
+          </ul>
+          <h3>Améliorations</h3>
+          <ul>
+            <li>Les moyens de reprise d’une compagnie en difficulté sont mieux visibles. L’économie ne change pas et aucun versement gratuit n’est automatique.</li>
+            <li>Les synchronisations ordinaires restent discrètes et les progressions sont conservées.</li>
+          </ul>
+          <h3>Bugs corrigés</h3>
+          <ul>
+            <li>Au jalon 12, le compteur d’expéditions industrielles pouvait retomber à zéro lors d’un nouvel envoi de train, quand le nettoyage de l’historique récent effaçait la trace des livraisons. Il s’appuie désormais sur des reçus durables, sans double comptage, et récupère les anciennes livraisons encore prouvées.</li>
+            <li>Une coupure réseau suivie d’une reconnexion ne donne pas deux fois le même cadeau.</li>
+          </ul>
+        </details>
+        <details id="version073" data-published-version="0.7.3">
           <summary><span class="release-number">0.7.3</span><span>Préparer chaque départ, faire grandir la compagnie</span></summary>
           <p class="release-preview__notice"><strong>Les changements de la 0.7.3.</strong> La version distribuée et ses installateurs sont indiqués dans l’espace testeur après connexion.</p>
           <h3>Nouveautés</h3>
